@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google.com</title>
+    <style>
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat (3,1fr );
+}
+nav{
+    margin-top: 22px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+.imga{
+    width: 25px;
+    height: 25px;
+}
+.item{
+    padding: 2px;
+    margin: 0px  5px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.languages ul{
+    display: flex;
+    flex-direction: row;
+
+}
+div ul li{
+    list-style: none;
+    margin: 0px 5px;
+}
+div ul li a{
+text-decoration: none;
+}
+.end{
+    display: flex;
+}
+#googleimg{
+    width:272px ;
+    height:92px ;
+    margin: 6px 50px 50px 50px;
+}
+button{
+    background-color: #f8f9fa;
+    border:0.5px solid transparent;
+    margin: 40px 10px;
+cursor: pointer;
+}
+
+#googlesearch{
+height: 34px;
+width: 122px;
+}
+#iamfeeling{
+height: 34px;
+width: 122px;
+}
+footer{
+    background-color: #f2f2f2;
+    /* position: sticky; */
+    /* margin-top: 40vh;  */
+    /* top: 100;  */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    /* min-height: 10%; */
+}
+.search{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(107, 101, 101);
+    padding: 0px 20px;
+    border-radius: 30px;
+}
+ input{
+    border: transparent;
+    width: 500px;
+    height: 45px;}
+    
+.region{
+    padding: 18px 10px;
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 10px;
+}
+#tihor{
+    display: flex;
+    justify-content: space-around;
+}
+#tihor2{
+
+    display: flex;
+    justify-content: space-around;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            
+            <li class="item" id="item1"  >  <a href="#">Gmail</a> </li>
+            <li class="item" id="item2"><a href="#">Images</a> </li>
+            <li class="item" id="item3"><a href="#"><img src="/2021-06-04 (2).png" alt="" class="imga"></a></li>
+            <li class="item" id="item4"><a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/" ><img src="/2021-06-04.png" alt=""class="imga"></a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="img">
+            <img src="/2021-06-04 (1).png" alt="" id="googleimg">
+
+        </div>
+       
+
+            <div class="search">
+                <img src="/search.png" alt="" class="imga">
+                <form action=".backend.php">
+                    <input type="text" name="text" id="text" placeholder="">
+                </form>
+<img src="/2021-06-04 (3).png" alt="" class="imga">
+            </div>
+            <div class="btn">
+                <button id="googlesearch">googlesearch</button>
+                <button id="iamfeeling">I am feeling lucky</button>
+            </div>
+            <div class="languages">
+                <ul>
+               <li> Google offerred in: </li>
+                        <li><a href="#">हिन्दी</a></li>
+                        <li><a href="#">বাংলা</a></li>
+                        <li><a href="#">বাংলা</a></li>
+                        <li><a href="#">বাংলা</a></li>
+                        <li><a href="#">বাংলা</a></li>
+                        <li><a href="#">বাংলা</a></li>
+                    </ul>
+                
+            </div>
+    </div>
+    <footer>
+        <div class="region">India</div>
+        <hr>
+        <div class="end">
+            <div >
+
+                About
+                Advertisinig
+                Business
+                How search works
+            </div>
+            <div >
+            Privacy
+            Terms
+            Settings
+
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
