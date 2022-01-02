@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar{
+    height: 100px;
+}
+#navbar ul {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100px;
+}
+#navbar ul::before {
+position: absolute;
+content: "";
+background: #000;
+opacity: 2;
+z-index: -1;
+height: 100px;
+width: 100vw;
+}
+.list-item{
+
+    list-style: none;
+    margin: 15px;
+    padding: 5px;
+    
+}
+.list-item a {
+    text-decoration: none;
+    font-size: 23px;
+    color: white;
+   transition: all 0.5s  ;
+
+
+}
+.list-item a:hover {
+    text-decoration: none;
+    font-size: 30px;
+
+    color: rgb(247, 121, 121);
+   
+
+}
+
+.myname{
+    color: white;
+    list-style: none;
+    position: absolute;
+    left: 26px;
+    font-family: 'Roboto';
+    font-size: 45px;
+    
+}
+.logo001{
+    position: absolute;
+    top: 120px;
+}
+
+#introSection{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'ZCOOL QingKe HuangYou';
+    font-size: 65px;
+    align-items: center;
+    /* background: black ; */
+    height: 425px;
+    
+}
+#introSection::before{
+    content: "";
+    position: absolute;
+    height: 425px;
+    width: 100vw;
+    background: #1a2845;
+    z-index: -1;
+}
+#brandlogo{
+    padding: 18px;
+    background: #000;
+    border-radius: 2rem;
+    height: 50px;
+    width: auto;
+}
+.small{
+    font-size: 40px;
+    
+}
+.compaines{
+    /* height: 300px; */
+    background-color: #fbd6d6c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+#footer{
+    margin-top: 200%;
+    background-color: black;
+    height: 100px;
+}
+#logo1{
+    height: 30px;
+    width: 30px;
+}
+
+#missionsection{
+margin-bottom:20px ;
+
+}
+
+
+.flex{
+    margin:  21px; 
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+text-align: center;
+gap: 10px;
+}
+
+
+#footer{
+    color: white;
+}
+
+.card{
+    border: 2px solid black;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+    height: 300px;
+    margin: 20px;
+}
+
+
+.int{
+    color: rgb(255, 8, 8) ;
+    background: rgb(255, 252, 252);
+ height: 50vh;
+    text-align: center;
+    font-size: 40px;
+}
+.http{
+    color: rgb(255, 8, 8) ;
+    background: rgb(255, 252, 252);
+ 
+    text-align: center;
+}
+#transition{
+   transition: all  2s ;
+}
+#transition:hover{
+    background: #000;
+    color: white;
+}
+#delbtn{
+    border: 1px solid rgb(255, 0, 0);
+    padding: 5px;
+    background: rgb(247 63 63);
+    color: white;
+    width: 75px;
+    border-radius: 6px;
+    margin: 20px 0rem auto 29rem;
+    cursor: pointer;
+}
+#about-section{
+    color: red ;
+    font-size: 40px;
+}
+/* contact form page styling */
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px auto;
+    width: 40vw;
+  
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    border-bottom:1px solid black;
+    border-left: 1px solid black;
+    border-right:1px solid black;
+    border-radius: 0px 0px 20px 20px ;
+    padding: 5px;
+}
+#mainh1{
+    text-align: center;
+    background-color:#1a2845 ;
+    border-radius: 20px 20px 0px 0px  ;
+    font-size: 40px;
+    padding: 10px;
+    color: white;
+}
+
+.input{
+    padding: 11px;
+    margin:15px;
+    border-radius:14px ;
+    outline: none;
+}
+#btn{
+    border: 1px solid rgb(255, 0, 0);
+    padding: 5px;
+    background: rgb(112 50 50);
+    color: white;
+    width: 75px;
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 0  yellow;
+    margin: 20px 0rem 15px 28rem;
+    transition: ease-out 0.3s;
+    cursor: pointer;
+}
+#btn:hover{
+    box-shadow: inset 75px 0 0 0   rgb(79, 207, 190);
+    
+}
+
+
+
+#upload-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black ;
+    height: 50vh;
+}
+#file-upload{
+    border: 2px solid black;
+    height: 20vh;
+    width: 20vw;
+    
+}
+.container3 h1 {
+    text-align: center;
+    font-size: 40px;
+}
+#myintro{
+    border: 2px solid black;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    color: white ;
+    background: #000;
+    padding: 30px;
+    height: 257px;
+    margin-top: 18px;
+}
+#myintro a{
+    text-decoration: none;
+    color: white;
+}
+#chatbtn{
+    color: white;
+    border:2px solid rgb(255, 0, 0);
+    padding: 5px;
+    background: #000;
+    position: fixed;
+    right: 17px;
+    bottom: 9px;
+}
+/* chatbot related stuff */
+#chatbot{
+    display: none;
+    color: white;
+    background: #000;
+    height: 400px;
+    width: 300px;
+    border: 2px solid black;
+    position: fixed;
+    right: 10px;
+    bottom: 47px;
+    cursor: pointer; 
+    /* display: flex; */
+    align-items: flex-end;
+    /* justify-content: center; */
+
+}
+#chatin{
+    width: 220px;
+    margin: 5px;
+    /* padding: 10px; */
+}
+#chatbtn1{
+    color: white;
+    background: rgb(6, 58, 100);
+    margin: 5px;
+}
+.icon{
+    height: 43px;
+    width: 56px;
+    position: absolute;
+    left: 14rem;
+    top: 30px;
+}
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

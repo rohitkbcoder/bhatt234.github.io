@@ -1,0 +1,45 @@
+extends base.pug
+block style 
+    style 
+        include ../static/style.css
+
+block content
+
+        section#introSection
+            .logo001 
+                img( id="brandlogo",src="./static/img/icon1.jpg", alt="logo")
+            div Hello there this is tech asr.
+            .small A website for all your tech needs.
+            
+        section#missionsection 
+             .container3 
+                p#myintro 
+                    //- h1 Hello there 
+                    |Techasr is your destination for every techy thing.
+                    |we readily provide news and tips and tricks about pc, tech , programming and more.
+                    a(href="/") insta
+        section#sponsorsSection
+            p Hi #{name} your age is  and your email is 
+                |#{email}
+
+            .compaines  
+                .card This is our instagram page you can follow us  here
+                .card This is our facebook page you can follow us here
+                .card This is our youtube channel you can subscribe our channel here
+                
+
+        button#btn67  Our Sponsors
+        button#card2 Tech asr 
+        form(action="/send-mail", method="post")
+            button send mail 
+        button#chatbtn  chat with us    
+        div#chatbot
+            input(type="text" id="chatin" placeholder="type your message here")
+            button#chatbtn1 send
+        
+                
+
+
+block scripts
+    script
+        include ../static/index.js
